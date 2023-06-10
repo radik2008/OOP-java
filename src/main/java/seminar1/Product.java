@@ -11,6 +11,10 @@ public abstract class Product {
         this.id = id;
     }
 
+    protected Product() {
+    }
+
+
     public String getKind() {
         return kind;
     }
@@ -35,6 +39,13 @@ public abstract class Product {
         this.id = id;
     }
 
-
+    @Override
+    public String toString() {
+        return "Product{" +
+                "kind='" + kind + '\'' +
+                ", price=" + price +
+                ", id=" + id +
+                '}';
+    }
 }
 
